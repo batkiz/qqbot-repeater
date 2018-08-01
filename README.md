@@ -12,5 +12,5 @@
 输入 !help 查看该帮助
 
 ## 注意事项
-[代码](./today.py)中 `file_name` 请改为环境下绝对路径。
+[代码](./repeater.py)中 `file_name` 请改为环境下绝对路径。
 由于基于 [qqbot](https://github.com/pandolia/qqbot)，因此 qqbot 中不支持的（图片、语音、XML 卡片消息等）本项目一概不支持。
