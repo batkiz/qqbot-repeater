@@ -52,9 +52,10 @@ def onQQMessage(bot, contact, member, content):
                                 + "输入 !list 触发词=回复 来删除这条回复\n"
                                 + "输入 !help 查看该帮助")
         """
-        if random.randint(0, 4) == 1:
+        if random.randint(0, 6) == 1:
             bot.SendTo(contact, content, resendOn1202=False)
         """
+        '''1/6 的几率复读'''
         if 'ping' in content:
             bot.SendTo(contact, "pong！现在是 " +
                        time.strftime("%H:%M", time.localtime()))
