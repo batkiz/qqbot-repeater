@@ -4,7 +4,7 @@ import re
 import random
 import json
 
-file_name = r'~\.qqbot-tmp\plugins\custom.json'
+file_name = r'~/.qqbot-tmp/plugins/custom.json'
 '''关键词 key-value 数据存放文件'''
 
 with open(file_name) as file_obj:
@@ -63,7 +63,7 @@ def onQQMessage(bot, contact, member, content):
         if '@ME' in content:
             bot.SendTo(contact, member.name+'艾特我干嘛呢')
         """
-        if re.match(r'!add*=*', content):
+        if re.match(r'!add *=*', content):
             CommandAdd(bot, contact, member, content, custom)
         elif re.match(r'!list *', content):
             CommandList(bot, contact, member, content, custom)
